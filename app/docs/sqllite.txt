@@ -1,0 +1,44 @@
+C:\Users\Evandro\AppData\Local\Android\sdk\platform-tools
+
+adb shell
+
+cd data
+cd data
+cd data/data/br.com.livroandroid.fragments_tabs_viewpager/databases
+
+sqlite3 CADAULA
+
+
+
+adb devices
+
+
+
+http://www.revistabw.com.br/revistabw/sqlite-comandos-e-funcoes-uteis/
+
+------------------------------- conectar a base do celular
+
+permissão no celular
+adb -s LGD85517b33a50 shell "run-as br.com.livroandroid.fragments_tabs_viewpager chmod 666 /data/data/br.com.livroandroid.fragments_tabs_viewpager/databases/CADAULA"
+
+adb -s LGD85517b33a50 shell "run-as com.compscitutorials.basigarcia.projetopilates chmod 666 /data/data/com.compscitutorials.basigarcia.projetopilates/databases/CADAULA"
+
+adb -s LGD85517b33a50 shell
+
+adb -s LGD85517b33a50 pull "/data/data/br.com.livroandroid.fragments_tabs_viewpager/databases/CADAULA"
+
+adb -s LGD85517b33a50 pull "/data/data/com.compscitutorials.basigarcia.projetopilates/databases/CADAULA"
+
+*** enviar o banco para o device
+
+adb -s LGD85517b33a50 push CADAULA /data/data/br.com.livroandroid.fragments_tabs_viewpager/databases/CADAULA
+
+adb -s LGD85517b33a50 push CADAULA /data/data/com.compscitutorials.basigarcia.projetopilates/databases/CADAULA
+
+**** emulador
+
+adb -s 192.168.56.101:5555 pull "/data/data/br.com.livroandroid.fragments_tabs_viewpager/databases/CADAULA"
+
+adb -s 192.168.56.101:5555 push CADAULA /data/data/br.com.livroandroid.fragments_tabs_viewpager/databases/CADAULA
+
+adb -s 192.168.56.101:5555 push CADAULA /data/data/com.compscitutorials.basigarcia.projetopilates/databases/CADAULA

@@ -1,0 +1,23 @@
+Copiar base de dados do emulador
+
+
+Easiest way is using Android Device Monitor to get the  database file and SQLite DataBase Browser to view the file while still
+using Android Studio to program android.
+1) Run and launch database app with Android emulator from Android Studio.
+
+2) Run Android Device Monitor. How to run?; Go to [your_folder] > sdk >tools.
+You can see monitor.bat in that folder. shift + right click inside the folder and select "Open command window here
+". This action will launch command prompt. type monitor and Android Device Monitor will be launched.
+(There are other ways to open this too. Search it)
+
+3) Select the emulator that you are currently running. Then Go to data>data>[your_app_package_name]>databases
+
+4) Click on the icon (located at top right corner) (hover on the icon  and you will see "pull a file from the device")
+and save anywhere you  like
+
+5) Launch SQLite DataBase Browser. Drag and drop the file that you just saved into that Browser.
+(You can view the database using any SQLite browser of your choice)
+
+6) Go to Browse Data tab and select your table to view.
+
+7 - ir no firefox - ferramentas - sql lite -
